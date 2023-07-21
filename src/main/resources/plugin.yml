@@ -1,0 +1,4 @@
+name: Cpark
+version: '${project.version}'
+main: me.djben.cpark.Cpark
+api-version: '1.18'

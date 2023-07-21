@@ -1,0 +1,28 @@
+Message:
+  join: "Hey, Welkom in Magic Craft!"
+  open:  "&2Open"
+  close: "&4Close"
+  maintenance: "&6Onderhoud"
+  construction: "&8In aanbouw"
+  automatic: "&dautomatisch"
+  nameInventory: "&5Attractie"
+  commandOpen: "&4Command niet volledig of onjuist"
+  commandSave: "&2De instellingen zijn aangepast"
+  CommandAFKAbsent: "You are now AFK."
+  CommandAFKPresent: "You are not currently AFK"
+
+World:
+  Time: false
+  UpdateInterval: 200L
+  AFKTime: 60000L
+
+Spawn:
+  ==: org.bukkit.Location
+  world: world
+  x: -221.6369286539334
+  y: 78.0
+  z: -202.87489407101782
+  pitch: 66.449905
+  yaw: -178.40521
+
+Resourepack: https://www.dropbox.com/s/k75kr53gs4fdhpp/crazycraft-v2.2.8.7.zip?dl=1

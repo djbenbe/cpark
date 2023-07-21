@@ -1,0 +1,61 @@
+item:
+  candy:
+    material: GOLDEN_SHOVEL
+    name: Candy Cups
+    lore: ' '
+    unbreakable: true
+    customdata: 3
+    damage: 9
+    slot: 1
+    x: 204
+    y: 202
+    z: -900
+    open: close
+  boom:
+    material: GOLDEN_SHOVEL
+    name: boom
+    lore: ' '
+    unbreakable: true
+    customdata: 4
+    damage: 10
+    slot: 2
+    x: 204
+    y: 202
+    z: -900
+    open: close
+  arend:
+    material: GOLDEN_SHOVEL
+    name: arend
+    lore: ' '
+    unbreakable: true
+    customdata: 5
+    damage: 11
+    slot: 3
+    x: 128
+    y: 197
+    z: -940
+    open: open
+  fly:
+    material: GOLDEN_SHOVEL
+    name: fly
+    lore: ' '
+    unbreakable: true
+    customdata: 6
+    damage: 13
+    slot: 4
+    x: 204
+    y: 202
+    z: -900
+    open: close
+  boot:
+    material: GOLDEN_SHOVEL
+    name: boot
+    lore: ' '
+    unbreakable: true
+    customdata: 7
+    damage: 14
+    slot: 5
+    x: 204
+    y: 202
+    z: -900
+    open: maintenance
