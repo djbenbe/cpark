@@ -1,6 +1,5 @@
 package me.djben.cpark.commands;
 
-
 import me.djben.cpark.Cpark;
 import me.djben.cpark.commands.cloud.CloudHandler;
 import me.djben.cpark.manager.ConfigManager;
@@ -12,22 +11,28 @@ import cloud.commandframework.annotations.CommandDescription;
 import cloud.commandframework.annotations.CommandMethod;
 import com.bergerkiller.bukkit.common.cloud.CloudSimpleHandler;
 
+import java.util.Collections;
+
 
 public class Commands {
-    private final CloudSimpleHandler cloud = new CloudSimpleHandler();
+    private final CloudHandler cloud = new CloudHandler();
     private final MenuCommands commands_menu = new MenuCommands();
     private final FlyCommands commands_fly = new FlyCommands();
     private final AFKCommands commands_afk = new AFKCommands();
-    public CloudSimpleHandler getHandler() {
+    public CloudHandler getHandler() {
         return cloud;
     }
-    public void enable(Cpark plugin){
+    public void enable(Cpark plugin) {
         cloud.enable(plugin);
         // Register all the commands
         cloud.annotations(commands_menu);
         cloud.annotations(commands_fly);
         cloud.annotations(commands_afk);
         cloud.annotations(this);
+
+        cloud.helpCommand(Collections.singletonList("menu"), "Shows help for commands that menu");
+        cloud.helpCommand(Collections.singletonList("cpark"), "Shows help for commands that cpark");
+
     }
 
     @CommandMethod("cpark")

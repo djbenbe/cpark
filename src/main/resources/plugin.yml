@@ -1,4 +1,6 @@
 name: Cpark
 version: '${project.version}'
 main: me.djben.cpark.Cpark
-api-version: '1.18'
+api-version: '1.19'
+depend: [BKCommonLib, Train_Carts]
+

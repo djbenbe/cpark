@@ -13,14 +13,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.serverVersion>1.18.2-R0.1-SNAPSHOT</project.serverVersion>
+        <project.serverVersion>1.19.3-R0.1-SNAPSHOT</project.serverVersion>
         <project.tcversion>1.20.1-v1-SNAPSHOT</project.tcversion>
         <project.bkcversion>1.20.1-v1-SNAPSHOT</project.bkcversion>
         <project.cloud.version>1.8.0-SNAPSHOT</project.cloud.version>
-        <java.version>17</java.version>
-        <junit.version>4.13.2</junit.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>15</java.version>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
     <build>
@@ -100,42 +99,43 @@
             <version>${project.serverVersion}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>com.bergerkiller.bukkit</groupId>
             <artifactId>BKCommonLib</artifactId>
             <version>${project.bkcversion}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.bergerkiller.bukkit</groupId>
             <artifactId>TrainCarts</artifactId>
             <version>${project.tcversion}</version>
+            <scope>provided</scope>
         </dependency>
         <!-- Cloud Command Framework -->
         <dependency>
             <groupId>org.bergerhealer.cloud.commandframework</groupId>
             <artifactId>cloud-paper</artifactId>
             <version>${project.cloud.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.bergerhealer.cloud.commandframework</groupId>
             <artifactId>cloud-annotations</artifactId>
             <version>${project.cloud.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.bergerhealer.cloud.commandframework</groupId>
             <artifactId>cloud-minecraft-extras</artifactId>
             <version>${project.cloud.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-platform-bukkit</artifactId>
             <version>4.1.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
